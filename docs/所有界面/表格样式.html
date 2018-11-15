@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格样式</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #fff8f6;
+            z-index: -555;
+        }
+        .container{
+            width: 45%;
+            margin: 50px auto;
+        }
+        .container>label{
+            width: 90%;
+            display: block;
+            margin: 15px auto 10px auto;
+            padding: 5px 5px 7px 5px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            position: relative;
+        }
+        .container>label:before{
+           position: absolute;
+           z-index: -3;
+            height: 3px;
+            width:100%;
+            content: "";
+            background-color: white;
+            top: 36.5px;
+            left: 0px;
+        }
+        .container>label input{
+            height: 20px;
+            width: 40%;
+        }
+        .container table{
+            width: 100%;
+            border: 1px solid gray;
+            /*padding: 2px;*/
+            text-align: center;
+            color: #626f80;
+        }
+        .container table caption{
+            font-size: 22px;
+            letter-spacing: 4px;
+            color: #626f80;
+        }
+        .container table tr th{
+            background-color: #faa692;
+            padding: 7px 10px;
+            color: white;
+        }
+        .container table tr th:first-child{
+            border-top-left-radius: 7px;
+        }
+        .container table tr th:last-child{
+            border-top-right-radius: 7px;
+        }
+        .container table tbody tr{
+            line-height: 37px;
+        }
+        .container table tbody tr .title{
+       background-color: salmon;
+        }
+        .container table tbody tr:last-child td:first-child{
+            border-bottom-left-radius: 7px;
+        }
+        .container table tbody tr:last-child td:last-child{
+            border-bottom-right-radius: 7px;
+        }
+        .container tbody .title{
+            position: relative;
+        }
+        .container tbody .title:after,.container tbody .title:before{
+            position: absolute;
+            height: 0px;
+            width: 0px;
+            content: "";
+            border: 7px solid transparent;
+
+            top: 10px;
+            right:30%;
+        }
+        .container tbody .title:after{
+            border-top: 7px solid #faa692;
+            top: 20px;
+            display: none;
+
+        }
+        .container tbody .title:before{
+            border-bottom: 7px solid #faa692;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <label >筛查（输入表中任意数据信息可查员工情况）：<input type="text"/></label>
+
+    <table>
+        <caption>基本员工信息表</caption>
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>暂住地</th>
+            <th>所住屋</th>
+            <th>选择</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="5" class="title">前台设计组（点击展开或收起）</td>
+        </tr>
+        <tr>
+            <td>陈红</td>
+            <td>女</td>
+            <td>重庆永川</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" checked/></td>
+        </tr>
+        <tr>
+            <td>陈国</td>
+            <td>男</td>
+            <td>重庆永川</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+            <td>王晓晓</td>
+            <td>女</td>
+            <td>重庆万州</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+            <td>陈国</td>
+            <td>男</td>
+            <td>重庆永川</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+            <td colspan="5" class="title">前台设计组（点击展开或收起）</td>
+        </tr>
+        <tr>
+            <td>陈红</td>
+            <td>女</td>
+            <td>重庆永川</td>
+            <td>前台设计</td>
+            <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+            <td>陈国</td>
+            <td>男</td>
+            <td>重庆永川</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+            <td>王晓晓</td>
+            <td>女</td>
+            <td>重庆万州</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+            <td>陈国</td>
+            <td>男</td>
+            <td>重庆永川</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+            <td>陈国</td>
+            <td>男</td>
+            <td>重庆永川</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+            <td colspan="5" class="title">前台设计组（点击展开或收起）</td>
+        </tr>
+        <tr>
+            <td>陈红</td>
+            <td>女</td>
+            <td>重庆永川</td>
+            <td>前台设计</td>
+            <td><input type="checkbox"/></td>
+        </tr>
+        <tr>
+            <td>陈国</td>
+            <td>男</td>
+            <td>重庆永川</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+            <td>王晓晓</td>
+            <td>女</td>
+            <td>重庆万州</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+            <td>陈国</td>
+            <td>男</td>
+            <td>重庆永川</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+            <td>陈国</td>
+            <td>男</td>
+            <td>重庆永川</td>
+            <td>前台设计</td>
+            <td><input type="checkbox" /></td>
+        </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>

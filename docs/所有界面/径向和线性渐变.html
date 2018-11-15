@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>linear-gradient线性渐变和radial-gradient径向渐变</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            height: 1200px;
+            width:100%;
+            background-color: bisque;
+            text-align: center;
+        }
+       .linear1{
+           height: 100px;
+           width: 1200px;
+           border-bottom: 1px solid black;
+           padding-bottom: 10px;
+           padding-top: 10px;
+           margin: auto;
+       }
+        .li{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin-left: 70px;
+            float: left;
+        }
+        .lin1{
+          background-image:linear-gradient(135deg,#13c2ff, #33fff8);
+        }
+        .lin2{
+            background-image:linear-gradient(to right,#13c2ff, #33fff8);
+        }
+        .lin3{
+            background-image:linear-gradient(to top,#13c2ff, #33fff8);
+        }
+        .lin4{
+            background-image:linear-gradient(45deg,#13c2ff, #33fff8);
+        }
+        .lin5{
+            background-image:linear-gradient(45deg, #ffc972 20%, #fffc46 15%, #ff1c1f 70%);
+        }
+        .ra{
+            height: 100px;
+            width: 150px;
+            border: 1px solid black;
+            margin-left: 70px;
+            float: left;
+        }
+        .rad1{
+            background-image: radial-gradient(red 10%,yellow 15%,blue 75%);
+        }
+        .rad2{
+            background-image: radial-gradient(circle,#76fcff 5%, #ffb428 30%, #3cbeff 50%);
+        }
+        .rad3{
+            background-image: radial-gradient(circle at bottom right, #ffd738 5%, #52bfff 30%, #ff3052 60%);
+        }
+        .rad4{
+            background-image: radial-gradient(at bottom left, #59ff59 5%, #31e6ff 30%, #4ca9ff 60%);
+        }
+        .rad5{
+            /*background-image: repeating-linear-gradient( 45deg, #ffd379, #ff8020);*/
+            background: repeating-linear-gradient(45deg,#fb3,#fb3 5px,#58a 0,#58a 10px);
+        }
+        .bain{
+            height: 250px;
+            width: 100%;
+            margin: auto;
+            padding: 0 200px;
+            margin-top: 10px;
+        }
+        .line1{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .bei1{
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
+            background-position: center 150px;
+            background-image:linear-gradient(45deg, #ffc972 20%, #fffc46 15%, #ff1c1f 70%);
+        }
+        .bei2{
+            background-size: 50px 50px;
+            background-repeat: repeat-x;
+            background-position: 0 20px;
+            background-image:linear-gradient(45deg, #ffc972 20%, #fffc46 15%, #ff1c1f 70%);
+        }
+        .bei3{
+            background-size: 50px 50px;
+            background-repeat: repeat-y;
+            background-position: 20px 0;
+            background-image:linear-gradient(45deg, #ffc972 20%, #fffc46 15%, #ff1c1f 70%);
+        }
+        .bei4{
+            background-size: 50px 50px;
+            background-repeat: repeat;
+            background:linear-gradient(45deg, #ff100a 25%,transparent 25%),linear-gradient(135deg, #ff100a 25%,transparent 25%),linear-gradient(225deg, #ff100a 25%,transparent 25%),linear-gradient(315deg, #ff100a 25%,transparent 25%);
+            background-size: 25px 25px;
+        }
+        .con1{
+            width: 200px;
+            height: 200px;
+            border: 20px solid black;
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
+            padding: 5px;
+            background-position:0 center ;
+            background-image:linear-gradient(45deg, #ffc972 20%, #fffc46 15%, #ff1c1f 70%);
+            margin-right: 20px;
+            float: left;
+        }
+        .con2{
+            width: 180px;
+            height: 180px;
+            border: 1px solid black;
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
+            padding: 15px;
+            background-origin: content-box;
+            background-position: 0 center;
+            background-image:linear-gradient(45deg, #ffc972 20%, #fffc46 15%, #ff1c1f 70%);
+            float: left;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="linear1">
+           <div class="li lin1"></div>
+           <div class="li lin2"></div>
+           <div class="li lin3"></div>
+           <div class="li lin4"></div>
+           <div class="li lin5"></div>
+       </div>
+       <div class="linear1">
+           <div class="ra rad1"></div>
+           <div class="ra rad2"></div>
+           <div class="li rad3"></div>
+           <div class="ra rad4"></div>
+           <div class="li rad5"></div>
+       </div>
+       <div class="bain">
+           <div class="line1 bei1"></div>
+           <div class="line1 bei2"></div>
+           <div class="line1 bei3"></div>
+           <div class="line1 bei4"></div>
+       </div>
+       <div class="bain">
+           <div class="con1"></div>
+           <div class="con2"></div>
+       </div>
+   </div>
+</body>
+</html>

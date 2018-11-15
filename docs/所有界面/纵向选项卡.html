@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>纵向选项卡</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            width:100px;
+            height: 360px;
+            margin: 150px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        nav dl{
+            flex: 1;
+            /*background-color: saddlebrown;*/
+            display: flex;
+
+        }
+        nav dl:hover{
+            cursor: pointer;
+        }
+        nav dl dt{
+            width:100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav dl dd{
+            /*display: none;*/
+        }
+        nav dl dd{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 100px;
+            width: 500px;
+            border: 1px solid gray;
+            background-color: white;
+            padding: 10px 5px 10px 15px;
+        }
+        nav dl dd a,nav dl dd a:visited{
+            display: inline-block;
+            margin-right: 6px;
+            line-height: 30px;
+            text-decoration: none;
+            color: #6f7b82;
+            letter-spacing: 0.5px;
+
+        }
+        nav dl dd a:hover,nav dl dd a:active{
+            color:#ff863f;
+            text-decoration:underline;
+        }
+        nav dl dt{
+            color:#ff863f;
+        }
+        nav dl:last-child dt{
+            border: 1px solid gray;
+            position: relative;
+        }
+        nav dl:last-child dt:after{
+            position: absolute;
+            content:"";
+            height: 88px;
+            width: 10px;
+            background-color:white;
+            bottom: 0;
+            right: -5px;
+            z-index: 2;
+        }
+        nav dl:not(:last-child):hover{
+            border: 1px solid gray;
+            z-index: 77;
+        }
+        nav dl:not(:last-child) dt{
+            position: relative;
+        }
+        nav dl:not(:last-child):hover dt:after{
+            position: absolute;
+            content:"";
+            height: 89px;
+            width: 10px;
+            background-color:white;
+            bottom: 0;
+            top: 0;
+            right: -5px;
+            z-index: 2;
+        }
+        nav dl:not(:last-child):hover~dl:last-child dt{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div>
+<nav>
+    <dl>
+        <dt>童装玩具</dt>
+        <dd>
+            <a href="#">连衣裙 </a>
+            <a href="#">保暖连体</a>
+            <a href="#">裤子</a>
+            <a href="#">羽绒</a>
+            <a href="#">居家睡衣</a>
+            <a href="#">针织</a>
+            <a href="#">帽子</a>
+            <a href="#">亲子装</a>
+            <a href="#">童鞋</a>
+            <a href="#">学步鞋</a>
+            <a href="#">女童运动鞋</a>
+            <a href="#">男童运动鞋</a>
+            <a href="#">连衣裙 </a>
+            <a href="#">保暖连体</a>
+            <a href="#">裤子</a>
+            <a href="#">羽绒</a>
+            <a href="#">居家睡衣</a>
+            <a href="#">针织</a>
+            <a href="#">帽子</a>
+            <a href="#">亲子装</a>
+            <a href="#">童鞋</a>
+            <a href="#">学步鞋</a>
+            <a href="#">女童运动鞋</a>
+            <a href="#">男童运动鞋</a>
+            <a href="#">连衣裙 </a>
+            <a href="#">保暖连体</a>
+            <a href="#">裤子</a>
+            <a href="#">羽绒</a>
+            <a href="#">居家睡衣</a>
+            <a href="#">针织</a>
+            <a href="#">帽子</a>
+            <a href="#">亲子装</a>
+            <a href="#">童鞋</a>
+            <a href="#">学步鞋</a>
+            <a href="#">女童运动鞋</a>
+            <a href="#">男童运动鞋</a>
+        </dd>
+    </dl>
+    <dl>
+        <dt>五金电子</dt>
+        <dd>
+            <a href="#">物联网市场 </a>
+            <a href="#"> 万用表</a>
+            <a href="#">电动螺丝刀</a>
+            <a href="#">管钳子</a>
+            <a href="#">电钻</a>
+            <a href="#">无尘锯</a>
+            <a href="#">电焊机</a>
+            <a href="#">角磨机</a>
+            <a href="#">切割机</a>
+            <a href="#">发电机</a>
+            <a href="#">快排阀</a>
+            <a href="#"> 万用表</a>
+            <a href="#">电动螺丝刀</a>
+            <a href="#">管钳子</a>
+            <a href="#">电钻</a>
+            <a href="#">无尘锯</a>
+            <a href="#">电焊机</a>
+            <a href="#">角磨机</a>
+            <a href="#">切割机</a>
+            <a href="#">发电机</a>
+            <a href="#">快排阀</a>
+            <a href="#"> 万用表</a>
+            <a href="#">电动螺丝刀</a>
+            <a href="#">管钳子</a>
+            <a href="#">电钻</a>
+            <a href="#">无尘锯</a>
+            <a href="#">电焊机</a>
+            <a href="#">角磨机</a>
+            <a href="#">切割机</a>
+            <a href="#">发电机</a>
+            <a href="#">快排阀</a>
+            <a href="#"> 万用表</a>
+            <a href="#">电动螺丝刀</a>
+            <a href="#">管钳子</a>
+            <a href="#">电钻</a>
+            <a href="#">无尘锯</a>
+            <a href="#">电焊机</a>
+            <a href="#">角磨机</a>
+            <a href="#">切割机</a>
+            <a href="#">发电机</a>
+            <a href="#">快排阀</a>
+        </dd>
+    </dl>
+    <dl>
+        <dt> 本地服务</dt>
+        <dd>
+            <a href="#">婚纱摄影</a>
+            <a href="#">青岛婚拍</a>
+            <a href="#">丽江婚拍</a>
+            <a href="#">三亚婚拍</a>
+            <a href="#">厦门婚拍</a>
+            <a href="#">新娘跟妆</a>
+            <a href="#">婚礼司仪</a>
+            <a href="#">婚车租赁</a>
+            <a href="#">婚礼策划</a>
+            <a href="#">婚纱摄影</a>
+            <a href="#">青岛婚拍</a>
+            <a href="#">丽江婚拍</a>
+            <a href="#">三亚婚拍</a>
+            <a href="#">厦门婚拍</a>
+            <a href="#">新娘跟妆</a>
+            <a href="#">婚礼司仪</a>
+            <a href="#">婚车租赁</a>
+            <a href="#">婚礼策划</a>
+            <a href="#">婚纱摄影</a>
+            <a href="#">青岛婚拍</a>
+            <a href="#">丽江婚拍</a>
+            <a href="#">三亚婚拍</a>
+            <a href="#">厦门婚拍</a>
+            <a href="#">新娘跟妆</a>
+            <a href="#">婚礼司仪</a>
+            <a href="#">婚车租赁</a>
+            <a href="#">婚礼策划</a>
+            <a href="#">婚纱摄影</a>
+            <a href="#">青岛婚拍</a>
+
+        </dd>
+    </dl>
+    <dl>
+        <dt>电子产品</dt>
+        <dd>
+            <a href="#">主板 </a>
+            <a href="#">显卡</a>
+            <a href="#">硬盘</a>
+            <a href="#">内存</a>
+            <a href="#">电源</a>
+            <a href="#">主板 </a>
+            <a href="#">显卡</a>
+            <a href="#">硬盘</a>
+            <a href="#">内存</a>
+            <a href="#">电源</a>
+            <a href="#">主板 </a>
+            <a href="#">显卡</a>
+            <a href="#">硬盘</a>
+            <a href="#">内存</a>
+            <a href="#">电源</a>
+            <a href="#">主板 </a>
+            <a href="#">显卡</a>
+            <a href="#">硬盘</a>
+            <a href="#">内存</a>
+            <a href="#">电源</a>
+            <a href="#">主板 </a>
+            <a href="#">显卡</a>
+            <a href="#">硬盘</a>
+            <a href="#">内存</a>
+            <a href="#">电源</a>
+        </dd>
+    </dl>
+</nav>
+</div>
+</body>
+</html>

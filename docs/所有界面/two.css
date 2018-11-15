@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:lightblue;
+}
+header{
+    height: 300px;
+    width: 100%;
+    background-color: salmon;
+}
+nav{
+    background-color:black;
+    height: 40px;
+
+}
+header ul{
+    list-style: none;
+    text-align: center;
+     width: 900px;
+     margin: auto;
+}
+
+header ul li{
+    float: left;
+    line-height: 40px;
+    width: 180px;
+}
+header ul li a{
+    display: block;
+}
+header ul li a:link,header ul li a:visited{
+    color: white;
+    text-decoration: none;
+}
+header ul li a:hover,header ul li a:active{
+    color: black;
+    text-decoration:underline;
+    background-color:steelblue;
+}
+#hphoto{
+    height: 260px;
+    background: url("../images/photo.PNG") no-repeat 20% 75%;
+    background-size:cover;
+}
+main{
+    width: 900px;
+    margin: auto;
+    padding-top: 50px;
+    color: grey;
+}
+aside{
+    width: 300px;
+    float: left;
+}
+h3{
+    font-size: 40px;
+   color: white;
+    font-family: cursive;
+    letter-spacing: 1px;
+}
+.amain{
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+main p{
+    color: grey;
+    margin: 5px 0;
+}
+strong{
+    color: white;
+}
+span{
+    color: palevioletred;
+    font-weight: bold;
+}
+aside #abottom{
+    background: url("../images/abottom.jpg") no-repeat 35% 35%;
+    height: 200px;
+    margin-top: 20px;
+    width: 250px;
+}
+section{
+    width: 600px;
+
+    height: 400px;
+    float: left;
+}
+section .scontent{
+    height: 150px;
+    width: 600px;
+    margin: 10px 0;
+    margin: 25px 0;
+}
+section .scontent .sel{
+    float: left;
+    width:200px ;
+    height: 150px;
+}
+section .scontent .ser{
+    float: left;
+    width: 400px;
+    height: 150px;
+}
+section .scontent img{
+    width: 180px;
+    height: 150px;
+}

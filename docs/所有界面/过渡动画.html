@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition过渡</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            padding: 10px;
+        }
+
+      .test{
+          height: 700px;
+          width: 100%;
+          text-align: center;
+      }
+        .test ul{
+            list-style: none;
+        }
+        .test ul li.test1{
+            width:50px;
+            height: 50px;
+            background-color: sandybrown;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .test0{
+            height:70px;
+            width: 100px;
+            background-color: sienna;
+            transition-property: width,height;
+            transition-duration: 5s;
+        }
+        .test0:hover{
+            width: 200px;
+            height: 80px;
+        }
+       .test:hover .test1{
+           width:45px;
+           height: 45px;
+           background-color: red;
+           border-radius: 5px;
+           transform: rotate(10deg);
+           margin-left: 1000px;
+       }
+        .ease{
+          transition: all 15s ease 0s;
+        }
+        .ease-in{
+            transition: all 15s ease-in 1s;
+        }
+        .ease-out{
+            transition: all 15s ease-out 1s;
+        }
+        .ease-in-out{
+            transition: all 15s ease-in-out 1s;
+        }
+        .linear{
+            transition: all 15s linear 1s;
+        }
+        .cubic-bezier{
+            transition: all 15s cubic-bezier(0.5,4.8,7.5,15) 1s;
+        }
+    </style>
+</head>
+<body>
+<h3>transition动画</h3>
+<div class="test0"></div>
+<div class="test">
+    <ul>
+        <li class="test1 ease">ease</li>
+        <li class="test1 ease-in">esae-in</li>
+        <li class="test1 ease-out">ease-out</li>
+        <li class="test1 ease-in-out">ease-in-out</li>
+        <li class="test1 linear">linear</li>
+        <li class="test1 cubic-bezier">cubic-bezier</li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>渐变导航条</title>
+    <style>
+        a:link,a:visited{
+            text-decoration: none;
+            color: #173146;
+        }
+        /*nav{*/
+            /*width: 585px;*/
+            /*margin: 90px auto;*/
+            /*display: flex;*/
+            /*justify-content: space-between;*/
+            /*border: 1px solid black;*/
+            /*background-image: linear-gradient(#223546, #e1f3fb 70%, #292744);*/
+        /*}*/
+        /*nav a{*/
+            /*padding: 15px 10px;*/
+            /*border-right: 2px solid black;*/
+        /*}*/
+        /*nav a:last-child{*/
+            /*border-right:none;*/
+        /*}*/
+        nav a:hover,nav a:active{
+            color: white;
+            background-size: 10px 10px;
+            background-image: repeating-linear-gradient(45deg, #2f3aff,transparent 5px,#58a 0,transparent 10px);
+        }
+
+        /*另一种方法*/
+        nav{
+            margin: 190px 0;
+            display: flex;
+            justify-content:center;
+            background-color: #c0d4da;
+        }
+        nav a{
+            padding: 15px 10px;
+            border: 2px solid black;
+            border-right: none;
+            background-image: linear-gradient(#223546, #e1f3fb 70%, #292744);
+        }
+        nav a:last-child{
+            border-right:2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+   <nav>
+       <a href="#">首页</a>
+       <a href="#">机构设置</a>
+       <a href="#">组织人事</a>
+       <a href="#">教学管理</a>
+       <a href="#">学科专业</a>
+       <a href="#">人才培养</a>
+       <a href="#">师资培训部</a>
+   </nav>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>localStorage制作简单留言板</title>
+    <script>
+            function addInfo(){
+              var Info=document.getElementById("t1");
+//                获取LocalStorage对象
+                var Lstorage=window.localStorage;
+//                判断LocalStorage对象是否有某个键
+                if(Lstorage.myBoard){
+                    var date=new Date();
+                    Lstorage.myBoard+=Info.value+"\n"+"发表时间："+date.toDateString()+"\n";
+                }else{
+                    var date=new Date();
+                    Lstorage.myBoard=Info.value+"\n"+"发表时间："+date.toDateString()+"\n";
+                }
+                upInfo();
+            }
+//            显示留言
+          function upInfo(){
+              var Lstorage=window.localStorage;
+              var show=document.getElementById("show");
+              if(window.localStorage.myBoard){
+                  show.value=window.localStorage.getItem("myBoard");
+              }else{
+                  show.value="还没有留言"
+              }
+          }
+
+            function clearInfo(){
+                window.localStorage.removeItem("myBoard");
+                upInfo();
+            }
+    </script>
+</head>
+<body>
+  <div>
+      <h2>制作简单留言板</h2>
+      <textarea name="liuyan" id="t1" cols="30" rows="10"></textarea><br/>
+      <input type="button" value="添加留言"  onclick="addInfo()"/>
+      <input type="button" value="清除留言"  onclick="clearInfo()"/>
+      <hr/>
+      <textarea name="qu" cols="30" rows="10" id="show" readonly></textarea>
+  </div>
+</body>
+</html>

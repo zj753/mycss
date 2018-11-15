@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高度自适应的九宫格效果</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            height:100%;
+            width: 100%;
+
+        }
+        .gong{
+            float: left;
+            width: 33.3%;
+            box-sizing: border-box;
+            height: 33.3%;
+            border-radius: 20px;
+            border: 10px solid white;
+            background-color: skyblue;
+        }
+        .container>div{
+            position: relative;
+        }
+        .container>div:after{
+            position: absolute;
+            content: attr(data-index);
+            height:40px;
+            font-size: 19px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom:0;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+     <div class="gong" data-index="1"></div>
+     <div  class="gong" data-index="2"></div>
+     <div  class="gong" data-index="3"></div>
+     <div  class="gong" data-index="4"></div>
+     <div  class="gong" data-index="5"></div>
+     <div  class="gong" data-index="6"></div>
+     <div  class="gong" data-index="7"></div>
+     <div  class="gong" data-index="8"></div>
+     <div  class="gong" data-index="9"></div>
+ </div>
+</body>
+</html>

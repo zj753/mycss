@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二级导航栏</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            margin-top: 80px;
+            background-color: #4a616b;
+            display: flex;
+            justify-content: center;
+            box-shadow:1px 1px 3px 1px  #4a616b;
+        }
+        a,a:visited{
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        nav dl dd{
+            display:none;
+        }
+        nav dl{
+            position: relative;
+        }
+        nav dl:hover dd{
+            display: block;
+            position: absolute;
+            border: 1px solid gray;
+            border-top: none;
+            width: 115px;
+            background-color:#4a616b;
+            left: 3px;
+        }
+        nav dl:hover dd div{
+            border-bottom: 2px solid white;
+            padding: 10px;
+        }
+        nav dl:hover dd div:last-child{
+            border-bottom:none;
+        }
+        nav dl:hover dd div:hover{
+            background-color: #96a6a2;
+        }
+        nav dt a{
+            padding: 13px 22px 7px 22px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            display: block;
+        }
+        nav dt:hover{
+            background-color: #96a6a2;
+
+        }
+        a:hover{
+            color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <dl>
+        <dt><a href="#">首页</a></dt>
+    </dl>
+    <dl>
+        <dt><a href="#">新闻中心</a></dt>
+        <dd>
+            <div><a href="http://www.baidu.com" target="_blank">重庆文理</a></div>
+            <div><a href="#">二级菜单条</a></div>
+           <div>  <a href="#">二级菜单条</a></div>
+            <div> <a href="#">二级菜单条</a></div>
+      </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">活动报道</a></dt>
+        <dd>
+            <div><a href="http://www.baidu.com" target="_blank">重庆文理</a></div>
+            <div><a href="#">二级菜单条</a></div>
+            <div>  <a href="#">二级菜单条</a></div>
+            <div> <a href="#">二级菜单条</a></div>
+        </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">机构设置</a></dt>
+        <dd>
+            <div><a href="http://www.baidu.com" target="_blank">重庆文理</a></div>
+            <div><a href="#">二级菜单条</a></div>
+            <div>  <a href="#">二级菜单条</a></div>
+            <div> <a href="#">二级菜单条</a></div>
+        </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">党政工团群</a></dt>
+        <dd>
+            <div><a href="http://www.baidu.com" target="_blank">重庆文理</a></div>
+            <div><a href="#">二级菜单条</a></div>
+            <div>  <a href="#">二级菜单条</a></div>
+            <div> <a href="#">二级菜单条</a></div>
+        </dd>
+    </dl>
+    <dl>
+        <dt><a href="#">行政事务</a></dt>
+        <dd>
+            <div><a href="http://www.baidu.com" target="_blank">重庆文理</a></div>
+            <div><a href="#">二级菜单条</a></div>
+            <div>  <a href="#">二级菜单条</a></div>
+            <div> <a href="#">二级菜单条</a></div>
+        </dd>
+    </dl>
+</nav>
+</body>
+</html>

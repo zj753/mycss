@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中英文导航</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a,a:visited{
+            text-decoration: none;
+            color: #4781ff;
+        }
+        nav{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            background-color: #bae0ed;
+            border-bottom: 3px solid #78a7dc;
+            font-size: 17px;
+            overflow: hidden;
+        }
+        nav a{
+            padding: 9px 14px 4px 14px;
+            background-color: gainsboro;
+            margin-right: 14px;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            box-shadow: 0 0 3px 1px darkgray;
+        }
+        nav a:last-child{
+            margin-right:0;
+        }
+        nav a span{
+            display: none;
+        }
+        nav a:hover span{
+            display: block;
+            margin-top: 5px;
+        }
+        nav a:hover{
+            margin-top: -30px;
+            background-color: #78a7dc;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#">首页<span>Home</span></a>
+    <a href="#">课程大厅<span>Course</span></a>
+    <a href="#">学习<span>Learn</span></a>
+    <a href="#">关于我们<span>About</span></a>
+</nav>
+</body>
+</html>

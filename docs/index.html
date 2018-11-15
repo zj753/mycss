@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+
+        }
+        .main .aside{
+            position: fixed;
+            background-color:skyblue;
+            height: 600px;
+            width: 150px;
+            top: 50px;
+            left: -155px;
+            padding:8px 5px 0 5px;
+            word-break: keep-all;
+            line-height: 25px;
+            font-size: 14px;
+        }
+        .main .aside a,.main .aside a:visited{
+            color: black;
+            text-decoration: none;
+            padding: 5px;
+        }
+        .main .aside a:hover,.main .aside a:active{
+            color: red;
+            text-decoration:underline;
+        }
+        .main .aside:hover{
+            left: 0;
+        }
+        .main iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        nav{
+            margin: 45px auto 0;
+            border: 1px solid cornflowerblue;
+            position: fixed;
+            background-color:skyblue;
+            height: 600px;
+            width: 180px;
+            top: 50px;
+            left: -180px;
+            padding:8px 5px 0 5px;
+            word-break: keep-all;
+            line-height: 25px;
+            font-size: 14px;
+        }
+        nav:hover{
+            left: 0;
+        }
+        nav h3{
+            color: white;
+            background-color:cornflowerblue;
+            padding: 10px 0 10px 8px;
+        }
+        nav dl dd{
+            display: none;
+        }
+        nav dl{
+            border-bottom: 1px dashed gainsboro;
+            padding: 12px 0 12px 17px;
+
+
+        }
+        nav dl:last-child{
+            border-bottom:none;
+        }
+        nav dl dt{
+            position: relative;
+            font-size: 18px;
+            font-weight: 600;
+            color: #4a616b;
+        }
+        nav dl dt:after{
+            position: absolute;
+            border: 5px solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            border-top: 6px solid gray;
+            right: 10px;
+            top: 10px;
+        }
+        nav dl:hover{
+            border-bottom: none;
+        }
+        nav dl:hover dd{
+            display: block;
+            margin-left: 25px;
+            padding-top: 9px;
+            position: relative;
+        }
+        nav dl:hover dd:before{
+            position: absolute;
+            border: 5px solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            border-left: 6px solid #757b7c;
+            left: -12px;
+            margin-top: 8px;
+        }
+        nav dl:hover dd a{
+            text-decoration: none;
+            color: black;
+        }
+        nav dl:hover dd a:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <nav>
+        <h3>日期分类</h3>
+        <dl>
+            <dt>2018-3-8</dt>
+            <dd>  <a href="所有界面/旅游界面1.html" target="iframe">旅游界面1</a></dd>
+            <dd>   <a href="所有界面/旅游界面2.html" target="iframe">旅游界面2</a></dd>
+
+        </dl>
+        <dl>
+            <dt>2018-3-11</dt>
+            <dd> <a href="所有界面/动画.html" target="iframe">动画</a></dd>
+            <dd><a href="所有界面/过渡动画.html" target="iframe">过渡动画</a></dd>
+            <dd>  <a href="所有界面/transform变化.html" target="iframe">transform变化</a></dd>
+        </dl>
+        <dl>
+            <dt>2018-3-12</dt>
+            <dd> <a href="所有界面/内容分列columns.html" target="iframe">内容分列</a>
+            <dd><a href="所有界面/渐变导航条.html" target="iframe">渐变导航条</a></dd>
+            <dd> <a href="所有界面/径向和线性渐变.html" target="iframe">径向和线性渐变</a></dd>
+            <dd> <a href="所有界面/本地存储.html" target="iframe">本地存储</a></dd>
+            <dd> <a href="所有界面/二级导航栏.html" target="iframe">二级导航栏</a></dd>
+        </dl>
+        <dl>
+            <dt>2018-3-13</dt>
+            <dd>  <a href="所有界面/二级导航栏.html" target="iframe">二级导航栏</a>
+            <dd><a href="所有界面/商业导航.html" target="iframe">商业导航</a></dd>
+            <dd><a href="所有界面/手风琴导航.html" target="iframe">手风琴导航</a></dd>
+            <dd><a href="所有界面/淘宝商品分类导航.html" target="iframe">淘宝商品分类导航</a></dd>
+            <dd> <a href="所有界面/中英文导航.html" target="iframe">中英文导航</a></dd>
+        </dl>
+        <dl>
+            <dt>2018-3-14</dt>
+            <dd> <a href="所有界面/照片曲线和卷边阴影.html" target="iframe">照片曲线和卷边阴影</a>
+            <dd> <a href="所有界面/表格样式.html" target="iframe">表格样式</a></dd>
+            <dd> <a href="所有界面/高度自适应的九宫格效果.html" target="iframe">自适应九宫格</a></dd>
+            <dd> <a href="所有界面/横向选项卡.html" target="iframe">横向选项卡</a></dd>
+            <dd><a href="所有界面/纵向选项卡.html" target="iframe">纵向选项卡</a></dd>
+        </dl>
+        <dl>
+            <dt>2018-3-15</dt>
+            <dd><a href="所有界面/左右半区透明效果.html" target="iframe">左右半区透明效果</a>
+            <dd><a href="所有界面/响应式栅格布局原理.html" target="iframe">响应式栅格布局原理</a></dd>
+            <dd><a href="所有界面/简单栅格系统原理.html" target="iframe">简单栅格系统原理</a></dd>
+        </dl>
+    </nav>
+
+    <iframe src="所有界面/旅游界面1.html" frameborder="0" name="iframe" scrolling="auto">
+    </iframe>
+</div>
+
+
+
+</body>
+</html>

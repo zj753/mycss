@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+#container{
+    background-color: cadetblue;
+    width: 900px;
+    /*height: 900px;*/
+    margin: 10px auto 0;
+}
+/*Í·²¿*/
+#banner{
+    background-color:steelblue;
+    height: 150px;
+    background: url("../images/2.PNG") no-repeat 20% 30%;
+    background-size: cover;
+}
+/*µ¼º½À¸*/
+#nav{
+    height: 35px;
+    background-color: skyblue;
+}
+#nav ul{
+    list-style: none;
+    text-align: center;
+}
+#nav ul li{
+    float: left;
+    width: 90px;
+    line-height: 35px;
+}
+#nav ul li a{
+    display: block;
+}
+#nav ul li a:link,#nav ul li a:visited{
+    background: url("../images/nav1.PNG");
+    text-decoration: none;
+    color: black;
+}
+#nav ul li a:hover,#nav ul li a:active{
+    background: url("../images/nav2.PNG");
+    text-decoration: underline;
+}
+/*Ö÷Ìå*/
+#main{
+    height:620px;
+    background-color:saddlebrown;
+    padding: 5px;
+}
+/*×ó²àÀ¸*/
+#leftside{
+    width: 255px;
+    height: 600px;
+    float: left;
+    background-color: cadetblue;
+}
+#sun{
+    border-bottom: 2px white solid;
+}
+#sun h3{
+    line-height: 60px;
+    border-bottom: 2px solid white;
+    text-align: center;
+    color: white;
+    background: url("../images/to1.PNG");
+}
+#sun ul{
+    list-style-type: none;
+}
+#sun ul li{
+    width: 100%;
+    line-height: 30px;
+    padding-left: 45px;
+    background: url("../images/hua.png") no-repeat 20px 5px;
+    background-size: 20px 20px;
+}
+#sun ul li a{
+    display: block;
+    height: 30px;
+}
+a:link,a:visited{
+    text-decoration: none;
+    color: black;
+}
+a:hover,a:active{
+    text-decoration: underline;
+    color:steelblue;
+}
+#tody{
+    text-align: center;
+}
+#tody h3{
+    padding: 10px 0 10px 25px;
+   text-align: left;
+    margin-bottom: 1px;
+    clear: both;
+    background: url("../images/hua2.png") no-repeat 0px 3px;
+    background-size: 30px 40px;
+    background-color:steelblue ;
+}
+#tody img{
+    width: 200px;
+    height: 150px;
+    border: 1px white solid;
+}
+#tody p{
+    margin-bottom: 10px;
+}
+/*ÖÐ¼äÀ¸*/
+#middle{
+    width: 430px;
+    background-color: saddlebrown;
+    height: 600px;
+    float: left;
+    padding: 0 5px;
+}
+#mcontent{
+    background: url("../images/m1.jpg");
+    height: 300px;
+}
+
+#beauty ul,#route ul li{
+    list-style: none;
+    padding: 5px;
+}
+#route{
+   padding-bottom: 25px;
+}
+#beauty h3,#route h3{
+    padding-left: 5px;
+}
+#beauty ul li{
+    float: left;
+    padding: 5px;
+}
+#beauty img{
+    width: 90px;
+    height: 100px;
+    border: 1px white solid;
+}
+
+#rightside{
+    width:185px;
+    background-color:skyblue;
+    height: 610px;
+    float: left;
+    padding: 5px;
+
+}
+#feng{
+    text-align: center;
+}
+#feng div{
+    margin-top: 10px;
+}
+#feng img{
+    width: 170px;
+    height: 110px;
+    border: 1px solid white;
+}
+#food ul,#home ul{
+    list-style: none;
+    padding: 5px;
+}
+#food ul li,#home ul li{
+    border-bottom: 1px white dashed;
+    line-height: 25px;
+    background: url("../images/hua.png") no-repeat 0px 5px;
+    background-size: 20px 20px;
+    padding-left: 15px;
+}
+#food h3,#home h3{
+
+    padding-left: 20px;
+    background: url("../images/hua2.png") no-repeat 0px 5px;
+    background-size: 20px 15px;
+    background-color:steelblue ;
+}
+/*ÓÒ±ßÀ¸*/
+/*½Å×¢*/
+#footer{
+    background-color:steelblue;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}

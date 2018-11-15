@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation动画</title>
+    <script src="jquery-1.7.2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-pause").click(function(){
+                $(".photo").addClass("btn-pause");
+            });
+            $("a").on("click",function(e){
+                $(".photo").removeClass("btn-pause");
+                $(".photo").attr("class","photo"+$(e.target).attr("class").split("-")[i]);
+            })
+        })
+
+    </script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .total{
+            width: 400px;
+            margin: auto;
+        }
+        .container{
+            position: relative;
+            width: 80px;
+            background-color: salmon;
+            height: 80px;
+        }
+        .photo{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: sandybrown;
+            background: url("../images/img.png")  no-repeat;
+            animation: qiu 990ms infinite step-end;
+        }
+
+        a{
+            display: inline-block;
+        }
+        a, .btn-pause{
+            width:60px ;
+            height: 30px;
+            font-size: 16px;
+            text-align: center;
+            background-color: salmon;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+        }
+          @keyframes qiu {
+              0%{
+                  background-position: 0,0;
+              }
+              6.25%{
+                  background-position: -80px,0;
+              }
+              12.5%{
+                  background-position:-160px,0;
+              }
+
+              18.75%{
+                  background-position: -240px 0;
+              }
+              25%{
+                  background-position: -320px,0;
+              }
+              31.25%{
+                  background-position: -400px,0;
+              }
+              37.5%{
+                  background-position: -480px,0;
+              }
+              43.75%{
+                  background-position: -560px,0;
+              }
+              50%{
+                  background-position: -640px,0;
+              }
+              56.25%{
+                  background-position: -720px,0;
+              }
+              62.5%{
+                  background-position: 800px,0;
+              }
+        68.75%{
+                  background-position: 880px,0;
+              }
+              75%{
+                  background-position: 920px,0;
+              }
+              81.25%{
+                  background-position: 1000px,0;
+              }
+              87.5%{
+                   background-position: 1080px,0;
+               }
+              93.75%{
+                  background-position: 1160px,0;
+              }
+              100%{
+                  background-position: 0,0;
+              }
+          }
+        .run-xfast{
+            animation-duration: 200ms;
+        }
+        .run-fast{
+            animation-duration: 400ms;
+        }
+        .run-normal{
+            animation-duration: 600ms;
+        }
+        .run-pace{
+            animation-duration: 930ms;
+        }
+        .btn-pause{
+            animation-play-state:paused;
+        }
+    </style>
+
+</head>
+<body>
+<div class="total">
+    <h3>animation动画</h3>
+    <div class="container">
+        <div class="photo"></div>
+    </div>
+    <a href="#" class="run-xfast">最快</a>
+    <a href="#" class="run-fast">快</a>
+    <a href="#" class="run-normal">正常</a>
+    <a href="#" class="run-pace">慢</a>
+    <button class="btn-pause" >停止</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单栅格系统原理</title>
+    <style>
+        .container{
+            width: 90%;
+            margin: 50px auto;
+        }
+        .row{
+            width: 100%;
+            line-height: 120px;
+            text-align: center;
+            height: 200px;
+        }
+        .row .col11,.row .col12,.row .col13,.row .col21,.row .col22,.row .col23{
+            border: 1px solid gray;
+            box-sizing: border-box;
+            float: left;
+        }
+        .row .col11{
+            width: 25%;
+        }
+        .row .col12{
+            width: 50%;
+        }
+        .row .col13{
+            width: 25%;
+        }
+        .row .col21{
+            width: 60%;
+        }
+        .row .col22{
+            width: 20%;
+        }
+        .row .col23{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <span class="col11">col11</span>
+        <span class="col12">col12</span>
+        <span class="col13">col13</span>
+    </div>
+    <div class="row">
+        <span class="col21">col21</span>
+        <span class="col22">col22</span>
+        <span class="col23">col23</span>
+    </div>
+</div>
+</body>
+</html>

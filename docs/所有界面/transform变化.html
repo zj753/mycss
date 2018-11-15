@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transform变化</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            height: 400px;
+            width: 100%;
+            text-align: center;
+
+        }
+        div ul{
+            list-style: none;
+            width:1500px;
+            margin: auto;
+
+        }
+        div ul li{
+            float:left;
+            width: 100px;
+            line-height: 80px;
+            margin-left: 10px;
+            padding: 7px;
+        }
+        div ul li a{
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        div ul .tanslate a{
+            background-color: rosybrown;
+        }
+        div ul .tanslateX a{
+            background-color: red;
+        }
+        div ul .tanslateY a{
+            background-color:cadetblue;
+        }
+        div ul .scale a{
+            background-color:aquamarine;
+        }
+        div ul .scaleX a{
+            background-color:darkgreen;
+        }
+        div ul .scaleY a{
+            background-color:cornflowerblue;
+        }
+        div ul .rotate a{
+            background-color: rosybrown;
+        }
+        div ul .skew a{
+            background-color: rosybrown;
+        }
+        div ul .skewX a{
+            background-color:saddlebrown;
+        }
+        div ul .skewY a{
+            background-color: orangered;
+        }
+        div ul .mult a{
+            background-color:darkturquoise;
+        }
+        div ul .tansform-origin a{
+            background-color:lawngreen;
+        }
+        /*变化*/
+        div ul .tanslate a:hover{
+            transform:translate(10px,20px);
+        }
+        div ul .tanslateX a:hover{
+            transform: translateX(15px);
+        }
+        div ul .tanslateY a:hover{
+            transform: translateY(25px);
+        }
+        div ul .scale a:hover{
+            transform:scale(1.5,1.5);
+        }
+        div ul .scaleX a:hover{
+            transform:scaleX(0.5);
+        }
+        div ul .scaleY a:hover{
+            transform:scaleY(0.8);
+        }
+        div ul .rotate a:hover{
+            transform:rotate(30deg);
+        }
+        div ul .skew a:hover{
+            transform:skew(15deg,45deg);
+        }
+        div ul .skewX a:hover{
+            transform:skewX(60deg);
+        }
+        div ul .skewY a:hover{
+            transform:skewY(45deg);
+        }
+        div ul .mult a:hover{
+           transform:translate(10px,15px) scale(0.5,0.5) rotate(45deg) skew(5deg);
+        }
+        div ul .tansform-origin a:hover{
+            transform-origin:left top;
+            transform:rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+     <div>
+         <ul>
+             <li class="item tanslate"><a href="#">tanslate</a></li>
+             <li class="item tanslateX"><a href="#">tanslateX</a></li>
+             <li class="item tanslateY"><a href="#">tanslateY</a></li>
+             <li class="item scale"><a href="#">scale</a></li>
+             <li class="item scaleX"><a href="#">scaleX</a></li>
+             <li class="item scaleY"><a href="#">scaleY</a></li>
+             <li class="item rotate"><a href="#">rotate</a></li>
+             <li class="item skew"><a href="#">skew</a></li>
+             <li class="item skewX"><a href="#">skewX</a></li>
+             <li class="item skewY"><a href="#">skewY</a></li>
+             <li class="item mult"><a href="#">mult</a></li>
+             <li class="item tansform-origin"><a href="#">origin</a></li>
+         </ul>
+     </div>
+</body>
+</html>
